@@ -1,0 +1,111 @@
+/* Position and sizing of burger button */
+@import "../Vars.scss";
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $main-black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $main-black;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: $main-white;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: $main-white;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  color: $main-white;
+  font-size: 1.25rem;
+  font-family: $lato;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 835px) and (max-device-width: 1025px) {
+  .bm-burger-button {
+    display: block;
+    left: 924px;
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 601px) and (max-device-width: 834px) {
+  .bm-burger-button {
+    display: block;
+    left: 710px;
+  }
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 600px) {
+  .bm-burger-button {
+    display: block;
+    left: 520px;
+  }
+}
+
+@media only screen and(min-device-width: 321px) and (max-device-width: 499px) {
+  .bm-burger-button {
+    display: block;
+    left: 314px;
+    top: 26px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bm-burger-button {
+    display: block;
+    left: 268px;
+    top: 26px;
+  }
+}

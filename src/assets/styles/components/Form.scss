@@ -1,0 +1,68 @@
+@import "../Vars.scss";
+
+.form-input {
+  width: 32rem;
+  height: 3.625rem;
+  margin: 1rem 0;
+  border: none;
+  background-color: #24252810;
+  font-size: 1.5rem;
+  color: $main-black;
+  font-family: $lato;
+  padding: 2rem;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-submit {
+  align-self: flex-end;
+  width: 9.8rem;
+  height: 2.8rem;
+  font-size: 1.5rem;
+  color: $main-black;
+  font-family: $oswald;
+  border: none;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 1rem;
+  background-color: $main-yellow;
+  margin-top: 1rem;
+}
+.form-submit:active {
+  outline: none;
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+  .form-input {
+    width: 35rem;
+  }
+  .form-submit {
+    align-self: flex-start;
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 540px) and (max-device-width: 768px) {
+  .form-input {
+    width: 35rem;
+  }
+  .form-submit {
+    align-self: flex-start;
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 539px) {
+  .form-input {
+    width: 18rem;
+  }
+  .form-submit {
+    align-self: flex-start;
+  }
+}

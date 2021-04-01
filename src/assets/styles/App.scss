@@ -1,0 +1,11 @@
+@import "./Vars.scss";
+
+body {
+  width: 100%;
+  margin: 0;
+  background: $main-white;
+}
+
+* {
+  box-sizing: border-box;
+}

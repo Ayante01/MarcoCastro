@@ -1,0 +1,213 @@
+@import "../Vars.scss";
+
+.container {
+  width: 100%;
+  background-color: $main-white;
+  .content {
+    width: 100%;
+    padding: 14rem 10rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    .about-main-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .about-text {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        .about-title {
+          font-size: 3rem;
+          color: $main-black;
+          font-family: $oswald;
+          margin: 0 0 5rem 0;
+          line-height: 3rem;
+        }
+        .main-description {
+          font-size: 1.5rem;
+          color: $main-black;
+          font-family: $lato;
+          margin: 0;
+          font-weight: 400;
+          width: 100%;
+        }
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+    .brand-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 4rem;
+      .brand-title {
+        margin: 7.5rem 0 0 0;
+        font-family: $oswald;
+        color: $main-yellow;
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+  .container {
+    .content {
+      padding: 12rem 5rem 5rem 5rem !important;
+    }
+  }
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+  .container {
+    .content {
+      padding: 0 5rem !important;
+      .about-main-content {
+        flex-direction: column;
+
+        .about-text {
+          width: 100%;
+          margin: 10rem 0 0 0 !important;
+          .about-title {
+            margin: 0 0 4rem 0;
+          }
+          .main-description {
+            font-size: 1.25rem !important;
+            width: 90% !important;
+          }
+        }
+      }
+      .brand-container {
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+        .brand-title {
+          margin-top: 6rem;
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        .brand-img {
+          width: 12rem !important;
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+  .container {
+    .content {
+      padding: 0 2.5rem !important;
+      .about-main-content {
+        flex-direction: column;
+
+        .about-text {
+          width: 100%;
+          margin: 8rem 0 0 0 !important;
+          .about-title {
+            margin: 0 0 4rem 0;
+          }
+          .main-description {
+            font-size: 1.25rem !important;
+            width: 90% !important;
+          }
+        }
+      }
+      .brand-container {
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+        .brand-title {
+          margin-top: 6rem;
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        .brand-img {
+          width: 10rem !important;
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 600px) {
+  .container {
+    .content {
+      padding: 0 2.5rem !important;
+      .about-main-content {
+        flex-direction: column;
+
+        .about-text {
+          width: 100%;
+          margin: 8rem 0 0 0 !important;
+          .about-title {
+            margin: 0 0 4rem 0;
+          }
+          .main-description {
+            font-size: 1.25rem !important;
+            width: 90% !important;
+          }
+        }
+      }
+      .brand-container {
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+        .brand-title {
+          margin-top: 6rem;
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+        .brand-img {
+          width: 8rem !important;
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 539px) {
+  .container {
+    .content {
+      padding: 0 1rem !important;
+      .about-main-content {
+        flex-direction: column;
+
+        .about-text {
+          width: 100%;
+          margin: 8rem 0 0 0 !important;
+          .about-title {
+            margin: 0 0 4rem 0;
+          }
+          .main-description {
+            font-size: 1.25rem !important;
+            width: 90% !important;
+          }
+        }
+      }
+      .brand-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        .brand-title {
+          margin-top: 6rem;
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        .brand-img {
+          width: 17.5rem;
+          margin-top: 2.5rem !important;
+        }
+      }
+    }
+  }
+}

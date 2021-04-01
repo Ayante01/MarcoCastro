@@ -1,0 +1,177 @@
+@import "../Vars.scss";
+
+.footer-container {
+  width: 100%;
+  background-color: $main-yellow;
+  .footer-content {
+    width: 100%;
+    padding: 8rem 10rem 3rem 10rem;
+    .row-one {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+      .services {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact {
+        .icons-text {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        .social-icon {
+          color: $main-white;
+          margin-right: 2.5rem;
+          width: 4rem;
+          height: 4rem;
+        }
+        .social-icon:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .row-two {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .copyright {
+        display: flex;
+        align-items: center;
+        .copy-text {
+          font-family: $lato;
+          color: $main-white;
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  .footer-title {
+    font-family: $lato;
+    font-weight: 900;
+    color: $main-white;
+    font-size: 1.75rem;
+    margin: 0 0 1rem 0;
+  }
+  .text-container {
+    .footer-text {
+      font-family: $lato;
+      color: $main-white;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  }
+  .icon {
+    color: $main-white;
+    margin-right: 0.75rem;
+  }
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+}
+
+//Tablet
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+  .footer-container {
+    .footer-content {
+      padding: 4.5rem 5rem 0 5rem !important;
+      .row-one {
+        flex-direction: column;
+        .social {
+          margin: 6rem auto 0 auto;
+        }
+      }
+      .row-two {
+        flex-direction: column;
+        .copy-text {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+    .footer-title {
+      margin: 2rem 0 0.5rem 0;
+    }
+    .text-container {
+      .footer-text {
+        margin: 0.75rem 0;
+      }
+    }
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 540px) and (max-device-width: 768px) {
+  .footer-container {
+    .footer-content {
+      padding: 4.5rem 2.5rem 0 2.5rem !important;
+      .row-one {
+        flex-direction: column;
+        .social {
+          margin: 4rem auto 0 auto;
+        }
+      }
+      .row-two {
+        flex-direction: column;
+        .copy-text {
+          font-size: 1.25rem !important;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+    .footer-title {
+      font-size: 1.75rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+    .text-container {
+      .footer-text {
+        font-size: 1.25rem;
+        margin: 0.75rem 0;
+      }
+    }
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 539px) {
+  .footer-container {
+    .footer-content {
+      padding: 4.5rem 1rem 0 1rem !important;
+      .row-one {
+        flex-direction: column;
+        .social {
+          margin: 3rem auto 0 auto;
+        }
+      }
+      .row-two {
+        flex-direction: column;
+        .copy-text {
+          font-size: 1rem !important;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+    .footer-title {
+      font-size: 1.75rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+    .text-container {
+      .footer-text {
+        font-size: 1rem;
+        margin: 0.75rem 0;
+      }
+    }
+  }
+}

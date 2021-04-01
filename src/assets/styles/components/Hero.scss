@@ -1,0 +1,124 @@
+@import "../Vars.scss";
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  .carousel {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    .hero-image {
+      width: 100%;
+      display: block;
+      height: 100vh;
+      margin: 0;
+    }
+  }
+  .main-content {
+    position: relative;
+    margin: 0;
+    top: 28.125rem;
+    left: 10rem;
+    width: 42.5rem;
+    .main-title {
+      color: $main-white;
+      font-size: 4.75rem;
+      font-family: $oswald;
+      line-height: 6.25rem;
+      margin: 0rem;
+    }
+    .secoundary-title {
+      color: $main-white;
+      font-size: 1.5rem;
+      font-family: $lato;
+      font-weight: 400;
+      margin: 1.25rem 0 1.563rem 0;
+      width: 48.125rem;
+    }
+  }
+}
+
+//Carousel
+
+.react-multi-carousel-dot-list {
+  justify-content: flex-end !important;
+  padding: 0px 100px 40px 0px !important;
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+  .main-content {
+    top: 35rem !important;
+    left: 2.5rem !important;
+    .main-title {
+      font-size: 4.5rem !important;
+      line-height: 5rem !important;
+    }
+    .secoundary-title {
+      width: 38.5rem !important;
+    }
+  }
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+  .main-content {
+    top: 35rem !important;
+    left: 5rem !important;
+  }
+}
+//Tablet
+@media only screen and (min-device-width: 540px) and (max-device-width: 768px) {
+  .main-content {
+    top: 30rem !important;
+    left: 2.5rem !important;
+    width: 90% !important;
+    .main-title {
+      width: 100% !important;
+      font-size: 3.5rem !important;
+      line-height: 4rem !important;
+    }
+    .secoundary-title {
+      width: 30.5rem !important;
+    }
+  }
+}
+
+//MOBILE
+@media only screen and(min-device-width: 321px) and (max-device-width: 499px) {
+  //HERO
+  .main-content {
+    top: 20rem !important;
+    left: 1rem !important;
+    width: 90% !important;
+    .main-title {
+      width: 100% !important;
+      font-size: 2.5rem !important;
+      line-height: 3rem !important;
+    }
+    .secoundary-title {
+      width: 18rem !important;
+      font-size: 1.25rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  //HERO
+  .main-content {
+    top: 14rem !important;
+    left: 1rem !important;
+    width: 90% !important;
+    .main-title {
+      width: 100% !important;
+      font-size: 2rem !important;
+      line-height: 2.5rem !important;
+    }
+    .secoundary-title {
+      width: 18rem !important;
+      font-size: 1.25rem !important;
+    }
+  }
+}

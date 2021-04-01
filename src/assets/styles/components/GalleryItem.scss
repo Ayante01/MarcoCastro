@@ -1,0 +1,101 @@
+@import "../Vars.scss";
+
+.gallery-item {
+  width: 22rem;
+  height: 19rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  .text {
+    color: $main-white;
+    position: relative;
+    font-family: $oswald;
+    font-size: 2.25rem;
+    margin: 8rem auto 0 auto;
+    text-align: center;
+  }
+  .image {
+    position: absolute;
+    width: 22rem;
+    height: 19rem;
+  }
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+  .gallery-item {
+    width: 16.25rem;
+    height: 15.25rem;
+    .text {
+      font-size: 1.8rem;
+      margin: 6rem auto 0 auto;
+    }
+    .image {
+      width: 16.25rem;
+      height: 15.25rem;
+    }
+  }
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 801px) and (max-device-width: 1025px) {
+  .gallery-item {
+    width: 13.5rem;
+    height: 12.5rem;
+    margin: 0 auto;
+    .text {
+      font-size: 1.8rem;
+      margin: 0 auto;
+      top: 6rem;
+    }
+    .image {
+      width: 13.5rem;
+      height: 12.5rem;
+    }
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 601px) and (max-device-width: 800px) {
+  .gallery-item {
+    width: 12.25rem;
+    height: 11.25rem;
+    margin: 0 auto;
+    .text {
+      font-size: 1.6rem;
+      margin: 0 auto;
+      top: 4rem;
+    }
+    .image {
+      width: 12.25rem;
+      height: 11.25rem;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 600px) {
+  .gallery-item {
+    width: 10.25rem;
+    height: 9.25rem;
+    margin: 0 auto;
+    .text {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      top: 6rem;
+    }
+    .image {
+      width: 10.25rem;
+      height: 9.25rem;
+    }
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 539px) {
+  .gallery-item {
+    margin: 0 auto;
+    .text {
+      margin: 0 auto;
+      top: 6rem;
+    }
+  }
+}

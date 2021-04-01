@@ -1,0 +1,82 @@
+@import "../Vars.scss";
+
+.container {
+  width: 100%;
+  .gallery-content {
+    width: 100%;
+    padding: 15.5rem 10rem 0 10rem;
+    .about-title {
+      font-size: 3rem;
+      color: $main-black;
+      font-family: $oswald;
+      margin: 0 0 5rem 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .mobile-carousel {
+      width: 100%;
+      display: none;
+    }
+  }
+}
+
+//LAPTOP
+@media only screen and (max-width: 1440px) {
+}
+
+//IPAD PRO
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+  .container {
+    .gallery-content {
+      padding: 8rem 5rem 0 5rem;
+      .about-title {
+        margin: 0 0 3rem 0 !important;
+      }
+      .gallery {
+        display: none;
+      }
+      .mobile-carousel {
+        display: flex;
+      }
+    }
+  }
+}
+
+//Tablet
+@media only screen and (min-device-width: 540px) and (max-device-width: 768px) {
+  .container {
+    .gallery-content {
+      padding: 8rem 2.5rem 0 2.5rem;
+      .about-title {
+        margin: 0 0 3rem 0 !important;
+      }
+      .gallery {
+        display: none;
+      }
+      .mobile-carousel {
+        display: flex;
+      }
+    }
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 539px) {
+  .container {
+    .gallery-content {
+      padding: 8rem 1rem 0 1rem;
+      .about-title {
+        margin: 0 0 3rem 0 !important;
+      }
+      .gallery {
+        display: none;
+      }
+      .mobile-carousel {
+        display: flex;
+      }
+    }
+  }
+}
