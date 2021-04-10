@@ -12,7 +12,7 @@ class Hamburger extends React.Component {
   render () {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
-        <Menu right disableAutoFocus id={ "sidebar" }>
+        <Menu  right disableAutoFocus id={ "sidebar" }>
         <Link activeClass="active" to="hero" spy={true} smooth={true} duration={500} className="menu-item">Inicio</Link>
         <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} className="menu-item">Quienes Somos</Link>
         <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className="menu-item">Contactenos</Link>

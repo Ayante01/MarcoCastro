@@ -67,45 +67,25 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-//LAPTOP
-@media only screen and (max-width: 1440px) {
-}
-
-//IPAD PRO
-@media only screen and (min-device-width: 835px) and (max-device-width: 1025px) {
-  .bm-burger-button {
-    display: block;
-    left: 924px;
-  }
-}
-
 //Tablet
-@media only screen and (min-device-width: 601px) and (max-device-width: 834px) {
+@media only screen and (min-device-width: 601px) and (max-device-width: 1025px) {
   .bm-burger-button {
     display: block;
-    left: 710px;
+    left: calc(100% - 5rem);
   }
 }
 
 @media only screen and (min-device-width: 500px) and (max-device-width: 600px) {
   .bm-burger-button {
     display: block;
-    left: 520px;
+    left: calc(100% - 5rem);
   }
 }
 
-@media only screen and(min-device-width: 321px) and (max-device-width: 499px) {
+@media only screen and (max-width: 499px) {
   .bm-burger-button {
     display: block;
-    left: 314px;
-    top: 26px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .bm-burger-button {
-    display: block;
-    left: 268px;
+    left: calc(100% - 3rem);
     top: 26px;
   }
 }

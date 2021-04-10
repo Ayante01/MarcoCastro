@@ -18,7 +18,7 @@ const Header = () => {
               <ul className='nav-list Header_links'>
                   <li className='list-item Header_link'><Link activeClass="active" to="hero" spy={true} smooth={true} duration={500} className='hvr-underline-from-left'>Inicio</Link></li>
                   <li className='list-item Header_link'><Link activeClass="active" to="about" spy={true} smooth={true} duration={500} className='hvr-underline-from-left'>Quienes Somos</Link></li>
-                  <li className='list-item Header_link'><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className='hvr-underline-from-left'>Contactenos</Link></li>
+                  <li className='list-item Header_link'><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className='hvr-underline-from-left'>Contáctenos</Link></li>
               </ul>
               
               </nav>

@@ -73,11 +73,10 @@
           width: 40rem !important;
           height: 40rem !important;
         }
-        .contact-form {
-          margin: 5rem 0;
-          .title {
-            display: none;
-          }
+      }
+      .contact-form {
+        .title {
+          display: none;
         }
       }
       .title-mobile {
@@ -103,7 +102,6 @@
         }
       }
       .contact-form {
-        margin: 5rem 0;
         .title {
           display: none;
         }
@@ -143,6 +141,20 @@
       .title-mobile {
         align-self: flex-start;
         display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .contact-container {
+    .contact-content {
+      padding: 0 2.5rem 0 2.5rem;
+      .contact-image {
+        .image {
+          width: 18rem !important;
+          height: 18rem !important;
+        }
       }
     }
   }

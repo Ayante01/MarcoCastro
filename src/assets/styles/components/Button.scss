@@ -25,9 +25,20 @@
 
 //MOBILE
 @media only screen and (max-width: 539px) {
-  .button {
-    border-radius: 0.5rem !important;
-    font-size: 1.25rem !important;
-    padding: 0 1.375rem 0.25rem 1.375rem !important;
+  .primary-button {
+    .button {
+      border-radius: 0.5rem;
+      font-size: 1.25rem;
+      padding: 0 1.375rem 0.25rem 1.375rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .primary-button {
+    .button {
+      border-radius: 0.5rem;
+      font-size: 1.25rem;
+    }
   }
 }

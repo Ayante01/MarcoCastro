@@ -71,7 +71,7 @@ const Hero = () => {
             </Carousel>
             <div className='main-content'>
               <h1 className='main-title'>Venta de agregados y Movimientos de tierra</h1>
-              <p className='secoundary-title'>Alquiler de backhoe, movimientos de tierra, limpieza de lotes y venta de agregados de construcción.</p>
+              <p className='secoundary-title'>Movimientos de tierra, limpieza de lotes y venta de agregados de construcción.</p>
               <Button name='contáctenos'/>
             </div>
             

@@ -19,7 +19,7 @@
   .main-content {
     position: relative;
     margin: 0;
-    top: 28.125rem;
+    top: calc(100% - 60%);
     left: 10rem;
     width: 42.5rem;
     .main-title {
@@ -44,44 +44,47 @@
 
 .react-multi-carousel-dot-list {
   justify-content: flex-end !important;
-  padding: 0px 100px 40px 0px !important;
+  padding: 0px calc(100% - 95%) 2.5rem 0px !important;
 }
 
 //LAPTOP
 @media only screen and (max-width: 1440px) {
-  .main-content {
-    top: 35rem !important;
-    left: 2.5rem !important;
-    .main-title {
-      font-size: 4.5rem !important;
-      line-height: 5rem !important;
-    }
-    .secoundary-title {
-      width: 38.5rem !important;
+  .hero-container {
+    .main-content {
+      left: 2.5rem;
+      .main-title {
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+      .secoundary-title {
+        width: 38.5rem;
+      }
     }
   }
 }
 
 //IPAD PRO
 @media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
-  .main-content {
-    top: 35rem !important;
-    left: 5rem !important;
+  .hero-container {
+    .main-content {
+      left: 5rem;
+    }
   }
 }
 //Tablet
 @media only screen and (min-device-width: 540px) and (max-device-width: 768px) {
-  .main-content {
-    top: 30rem !important;
-    left: 2.5rem !important;
-    width: 90% !important;
-    .main-title {
-      width: 100% !important;
-      font-size: 3.5rem !important;
-      line-height: 4rem !important;
-    }
-    .secoundary-title {
-      width: 30.5rem !important;
+  .hero-container {
+    .main-content {
+      left: 2.5rem;
+      width: 90%;
+      .main-title {
+        width: 100%;
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
+      .secoundary-title {
+        width: 30.5rem;
+      }
     }
   }
 }
@@ -89,36 +92,57 @@
 //MOBILE
 @media only screen and(min-device-width: 321px) and (max-device-width: 499px) {
   //HERO
-  .main-content {
-    top: 20rem !important;
-    left: 1rem !important;
-    width: 90% !important;
-    .main-title {
-      width: 100% !important;
-      font-size: 2.5rem !important;
-      line-height: 3rem !important;
-    }
-    .secoundary-title {
-      width: 18rem !important;
-      font-size: 1.25rem !important;
+  .hero-container {
+    .main-content {
+      left: 1rem;
+      width: 90%;
+      .main-title {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+      .secoundary-title {
+        width: 18rem;
+        font-size: 1.25rem;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 320px) {
   //HERO
-  .main-content {
-    top: 14rem !important;
-    left: 1rem !important;
-    width: 90% !important;
-    .main-title {
-      width: 100% !important;
-      font-size: 2rem !important;
-      line-height: 2.5rem !important;
+  .hero-container {
+    .main-content {
+      left: 1rem;
+      width: 90%;
+      .main-title {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      .secoundary-title {
+        width: 18rem;
+        font-size: 1.25rem;
+      }
     }
-    .secoundary-title {
-      width: 18rem !important;
-      font-size: 1.25rem !important;
+  }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .hero-container {
+    .carousel {
+      .hero-image {
+        height: 120vh;
+      }
+    }
+    .main-content {
+      .main-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .secoundary-title {
+        font-size: 1rem;
+      }
     }
   }
 }

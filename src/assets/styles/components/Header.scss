@@ -70,9 +70,19 @@
     height: 5.125rem;
   }
   .logo {
-    width: 10rem !important;
+    width: 10rem;
   }
   .nav-list {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .header {
+    padding: 0 0.75rem;
+    height: 6rem;
+  }
+  .logo {
+    width: 10rem;
   }
 }

@@ -24,7 +24,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='contact'>
-                        <h4 className='footer-title'>Contact</h4>
+                        <h4 className='footer-title'>Contacto</h4>
                         <div className='text-container'>
                             <div className='icons-text'>
                                 <PhoneIcon className='icon'/>
