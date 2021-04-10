@@ -5,3 +5,5 @@ Disallow: /node_modules/
 # Group 2
 User-agent: *
 Allow: /
+
+Sitemap: https://marco-castro.vercel.app/sitemap.xml
